@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        nav {
+            background-color: rgb(4, 17, 59);
+            padding: 18px 8%;
+            gap: 25px;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+        }
+        nav h2 {
+            margin-right: auto;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: #6c63ff;
+        }
+        button {
+            background: #6c63ff;
+            color: white;
+            border: none;
+            padding: 14px 23px;
+            border-radius: 30px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: rgb(8, 2, 26);
+            transform: translateY(-5px);
+        }
+        .about {
+            background: linear-gradient(135deg, #07152f, #172d5a);
+            text-align: center;
+            color: white;
+            padding: 80px 8%;
+            min-height: 500px;
+        }
+        .about h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+        .about p {
+            font-size: 20px;
+            color: #cbd5e1;
+            margin-bottom: 30px;
+        }
+        .about img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #6c63ff;
+            object-fit: cover;
+        }
+        .skill {
+            background: #f4f6fb;
+            color: #07152f;
+            padding: 70px 8%;
+            text-align: center;
+
+        }
+        .skill h2 {
+            margin-bottom: 15px;
+        }
+        .card-container {
+            gap: 23px;
+            flex-wrap: wrap;
+            justify-content: center;
+            display: flex;
+            
+        }
+        .card {
+            background: white;
+            width: 250px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgb(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+        }
+        footer {
+            background: rgb(1, 9, 36);
+            color: white;
+            padding: 50px 8%;
+            text-align: center;
+        }
+        footer p {
+            color: #aeb8ca;
+            margin: 15px 0;
+        }
+    </style>
+    </head>
+    <body>
+        <!--section nav-->
+        <nav>
+            <h2>My-Profile</h2>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skill">Skill</a>
+            <a href="#contact">Contact</a>
+
+            <button>Login</button>
+        </nav>
+        <!--section about-->
+        <section class="about">
+            <h1 id="profileTitle">About Me</h1>
+            <p>Iam lerning coding, and this is my profile</p>
+            <img src="#" alt="#">
+        </section>
+        <!--skill-->
+        <section class="skill">
+            <div class="card-container">
+                            <div class="card">
+                                <h2>Skill 01</h2>
+                                <p>Web development</p>
+                            </div>
+                            <div class="card">
+                                <h2>Skill 02</h2>
+                                <p>Building App</p>
+                            </div>
+                            <div class="card">
+                                <h2>Skill 03</h2>
+                                <p>Anything dealing with java script</p>
+                            </div>
+            </div>
+
+        </section>
+        <footer>
+            <h2>Contact Us, For more Info</h2>
+            <p>&copy. 2026 copyright</p>
+            <button id="contactBtn">Contact Me</button>
+            <button id="greetBtn">Say Hello</button>
+        </footer>
+        <script src="script.js"></script>
+        </body>
+</html>
